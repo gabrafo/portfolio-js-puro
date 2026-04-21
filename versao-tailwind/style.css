@@ -1,0 +1,48 @@
+:root[data-theme="light"] {
+  --bg-color: #f8fafc;
+  --text-color: #1f2937;
+  --surface-color: #ffffff;
+  --muted-color: #4b5563;
+  --border-color: #d1d5db;
+  --link-color: #2563eb;
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-color: #e5e7eb;
+  --surface-color: #1e293b;
+  --muted-color: #cbd5e1;
+  --border-color: #334155;
+  --link-color: #93c5fd;
+}
+
+.site-body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.site-header {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+.site-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+}
+
+.site-muted {
+  color: var(--muted-color);
+}
+
+.project-link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.project-link:hover,
+.project-link:focus {
+  text-decoration: underline;
+}
