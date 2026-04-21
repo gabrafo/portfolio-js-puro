@@ -10,15 +10,15 @@
 </head>
 <body class="site-body">
   <header class="site-header border-b" role="banner">
-    <div class="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="site-wrapper py-4 flex flex-wrap items-center justify-between gap-4">
       <div>
-        <h1 class="text-2xl font-bold">Gabriel Fagundes Mesquita Sousa</h1>
+        <h1 class="hero-title">Gabriel Fagundes Mesquita Sousa</h1>
         <p class="site-muted">Engenheiro de Software e Pesquisador em IA</p>
       </div>
       <div class="flex items-center gap-2">
         <button
           id="theme-toggle"
-          class="inline-flex items-center rounded-md border border-blue-500 px-4 py-2 text-sm font-semibold text-blue-500 hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-400"
+          class="theme-toggle-btn"
           type="button"
           aria-label="Alternar entre tema claro e escuro"
           aria-pressed="false"
@@ -30,20 +30,20 @@
     </div>
   </header>
 
-  <main id="conteudo-principal" class="max-w-5xl mx-auto px-4 py-4" role="main">
-    <section aria-labelledby="sobre-titulo" class="site-card p-4 mb-4 rounded-xl shadow-sm">
-      <h2 id="sobre-titulo" class="text-xl font-semibold mb-3">Sobre Mim</h2>
+  <main id="conteudo-principal" class="site-wrapper py-6" role="main">
+    <section aria-labelledby="sobre-titulo" class="site-card p-4 mb-6 rounded-lg shadow-sm">
+      <h2 id="sobre-titulo" class="section-title">Sobre Mim</h2>
       <p>
         Atuo com desenvolvimento Fullstack (Java/Spring Boot, NestJS, ReactJS), Inteligência Artificial e agentes conversacionais.
         Atualmente sou Diretor de Projetos na RAIA, liderando iniciativas de Machine Learning e otimização de performance.
       </p>
     </section>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <section aria-labelledby="formacao-titulo">
-        <div class="site-card p-4 h-full rounded-xl shadow-sm">
-          <h2 id="formacao-titulo" class="text-lg font-semibold mb-3">Formação</h2>
-          <ul class="list-disc list-inside space-y-1">
+        <div class="site-card p-4 h-full rounded-lg shadow-sm">
+          <h2 id="formacao-titulo" class="subsection-title">Formação</h2>
+          <ul class="list-disc pl-6 space-y-1 mb-0">
             <li>Bacharelado em Sistemas de Informação - UFLA (2023-2027, previsão)</li>
             <li>Extensão em Redes Neurais Artificiais e Deep Learning - UFLA</li>
             <li>Idiomas: Português (nativo), Inglês (C1)</li>
@@ -52,9 +52,9 @@
       </section>
 
       <section aria-labelledby="interesses-titulo">
-        <div class="site-card p-4 h-full rounded-xl shadow-sm">
-          <h2 id="interesses-titulo" class="text-lg font-semibold mb-3">Interesses</h2>
-          <ul class="list-disc list-inside space-y-1">
+        <div class="site-card p-4 h-full rounded-lg shadow-sm">
+          <h2 id="interesses-titulo" class="subsection-title">Interesses</h2>
+          <ul class="list-disc pl-6 space-y-1 mb-0">
             <li>Inteligência Artificial aplicada e agentes de IA</li>
             <li>Arquitetura de microsserviços e APIs escaláveis</li>
             <li>Machine Learning, Deep Learning e Visão Computacional</li>
@@ -63,9 +63,9 @@
       </section>
     </div>
 
-    <section aria-labelledby="experiencia-titulo" class="site-card p-4 mt-4 rounded-xl shadow-sm">
-      <h2 id="experiencia-titulo" class="text-xl font-semibold mb-3">Experiência Profissional</h2>
-      <ul class="list-disc list-inside space-y-1">
+    <section aria-labelledby="experiencia-titulo" class="site-card p-4 mt-6 rounded-lg shadow-sm">
+      <h2 id="experiencia-titulo" class="section-title">Experiência Profissional</h2>
+      <ul class="list-disc pl-6 space-y-1 mb-0">
         <li>Tech for Humans (2026 - atual): Desenvolvedor de Agentes de IA.</li>
         <li>Diwo (2025 - 2026): Estagiário Desenvolvedor Fullstack (NestJS, ReactJS, Cloud).</li>
         <li>Emakers Jr. (2025): Gerente de Projetos e Desenvolvedor Backend (Java/Spring Boot).</li>
@@ -73,30 +73,34 @@
       </ul>
     </section>
 
-    <section aria-labelledby="projetos-titulo" class="mt-4">
-      <h2 id="projetos-titulo" class="text-xl font-semibold mb-3">Projetos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <section aria-labelledby="projetos-titulo" class="mt-6">
+      <h2 id="projetos-titulo" class="section-title">Projetos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <article aria-labelledby="projeto-1-titulo">
-          <div class="site-card p-4 h-full rounded-xl shadow-sm">
-            <h3 id="projeto-1-titulo" class="text-base font-semibold mb-2">TrashScan (RAIA)</h3>
+          <div class="site-card p-4 h-full rounded-lg shadow-sm">
+            <h3 id="projeto-1-titulo" class="project-title">TrashScan (RAIA)</h3>
             <p class="mb-2">Projeto open-source de Visão Computacional para classificação de resíduos e apoio à sustentabilidade.</p>
-            <a class="project-link" href="https://gabrafo.dev" target="_blank" rel="noopener noreferrer" aria-label="Abrir site pessoal">Ver mais</a>
           </div>
         </article>
 
         <article aria-labelledby="projeto-2-titulo">
-          <div class="site-card p-4 h-full rounded-xl shadow-sm">
-            <h3 id="projeto-2-titulo" class="text-base font-semibold mb-2">NIAD e IA Generativa</h3>
+          <div class="site-card p-4 h-full rounded-lg shadow-sm">
+            <h3 id="projeto-2-titulo" class="project-title">NIAD e IA Generativa</h3>
             <p class="mb-2">Coordenação de iniciativas de pesquisa em IA e IA Generativa, com foco em aplicações práticas e impacto acadêmico.</p>
-            <a class="project-link" href="https://github.com/gabrafo" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub com projetos">Ver mais</a>
           </div>
         </article>
       </div>
     </section>
 
-    <section aria-labelledby="contato-titulo" class="site-card p-4 mt-4 rounded-xl shadow-sm">
-      <h2 id="contato-titulo" class="text-xl font-semibold mb-3">Contato</h2>
-      <ul class="space-y-1">
+    <section aria-labelledby="portfolio-oficial-titulo" class="site-card p-4 mt-6 rounded-lg shadow-sm">
+      <h2 id="portfolio-oficial-titulo" class="section-title">Portfólio Oficial</h2>
+      <p class="mb-3">Essa versão é um protótipo de portfólio. Meu portfólio "oficial" feito em ReactJS é:</p>
+      <a class="official-button" href="https://gabrafo.dev" target="_blank" rel="noopener noreferrer" aria-label="Abrir portfólio oficial em gabrafo.dev">Acessar gabrafo.dev</a>
+    </section>
+
+    <section aria-labelledby="contato-titulo" class="site-card p-4 mt-6 rounded-lg shadow-sm">
+      <h2 id="contato-titulo" class="section-title">Contato</h2>
+      <ul class="mb-0">
         <li><strong>Email:</strong> <a class="project-link" href="mailto:gafagundesmesquita@gmail.com">gafagundesmesquita@gmail.com</a></li>
         <li><strong>LinkedIn:</strong> <a class="project-link" href="https://linkedin.com/in/gafagundes" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn">linkedin.com/in/gafagundes</a></li>
         <li><strong>GitHub:</strong> <a class="project-link" href="https://github.com/gabrafo" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub">github.com/gabrafo</a></li>
