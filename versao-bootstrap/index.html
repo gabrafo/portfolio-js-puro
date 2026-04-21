@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Pessoal - Bootstrap</title>
+  <meta name="description" content="Página pessoal simples e responsiva com Bootstrap e alternância de tema.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="site-body">
+  <header class="site-header border-bottom" role="banner">
+    <div class="container site-wrapper py-3 d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <div>
+        <h1 class="h3 mb-1">Gabriel Fagundes Mesquita Sousa</h1>
+        <p class="site-muted mb-0">Engenheiro de Software e Pesquisador em IA</p>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <button
+          id="theme-toggle"
+          class="btn btn-outline-primary"
+          type="button"
+          aria-label="Alternar entre tema claro e escuro"
+          aria-pressed="false"
+        >
+          Tema escuro
+        </button>
+        <span id="theme-status" class="visually-hidden" aria-live="polite"></span>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo-principal" class="container site-wrapper py-4" role="main">
+    <section aria-labelledby="sobre-titulo" class="site-card p-4 mb-4 rounded-3 shadow-sm">
+      <h2 id="sobre-titulo" class="h4 mb-3">Sobre Mim</h2>
+      <p class="mb-0">
+        Atuo com desenvolvimento Fullstack (Java/Spring Boot, NestJS, ReactJS), Inteligência Artificial e agentes conversacionais.
+        Atualmente sou Diretor de Projetos na RAIA, liderando iniciativas de Machine Learning e otimização de performance.
+      </p>
+    </section>
+
+    <div class="row g-4">
+      <section class="col-12 col-lg-6" aria-labelledby="formacao-titulo">
+        <div class="site-card p-4 h-100 rounded-3 shadow-sm">
+          <h2 id="formacao-titulo" class="h5 mb-3">Formação</h2>
+          <ul class="mb-0">
+            <li>Bacharelado em Sistemas de Informação - UFLA (2023-2027, previsão)</li>
+            <li>Extensão em Redes Neurais Artificiais e Deep Learning - UFLA</li>
+            <li>Idiomas: Português (nativo), Inglês (C1)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="col-12 col-lg-6" aria-labelledby="interesses-titulo">
+        <div class="site-card p-4 h-100 rounded-3 shadow-sm">
+          <h2 id="interesses-titulo" class="h5 mb-3">Interesses</h2>
+          <ul class="mb-0">
+            <li>Inteligência Artificial aplicada e agentes de IA</li>
+            <li>Arquitetura de microsserviços e APIs escaláveis</li>
+            <li>Machine Learning, Deep Learning e Visão Computacional</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <section aria-labelledby="experiencia-titulo" class="site-card p-4 mt-4 rounded-3 shadow-sm">
+      <h2 id="experiencia-titulo" class="h4 mb-3">Experiência Profissional</h2>
+      <ul class="mb-0">
+        <li>Tech for Humans (2026 - atual): Desenvolvedor de Agentes de IA.</li>
+        <li>Diwo (2025 - 2026): Estagiário Desenvolvedor Fullstack (NestJS, ReactJS, Cloud).</li>
+        <li>Emakers Jr. (2025): Gerente de Projetos e Desenvolvedor Backend (Java/Spring Boot).</li>
+        <li>UFLA (2025 - atual): Iniciação Científica (Projeto Midas) e Instrutor de Programação.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="projetos-titulo" class="mt-4">
+      <h2 id="projetos-titulo" class="h4 mb-3">Projetos</h2>
+      <div class="row g-4">
+        <article class="col-12 col-md-6" aria-labelledby="projeto-1-titulo">
+          <div class="site-card p-4 h-100 rounded-3 shadow-sm">
+            <h3 id="projeto-1-titulo" class="h6 mb-2">TrashScan (RAIA)</h3>
+            <p class="mb-2">Projeto open-source de Visão Computacional para classificação de resíduos e apoio à sustentabilidade.</p>
+          </div>
+        </article>
+
+        <article class="col-12 col-md-6" aria-labelledby="projeto-2-titulo">
+          <div class="site-card p-4 h-100 rounded-3 shadow-sm">
+            <h3 id="projeto-2-titulo" class="h6 mb-2">NIAD e IA Generativa</h3>
+            <p class="mb-2">Coordenação de iniciativas de pesquisa em IA e IA Generativa, com foco em aplicações práticas e impacto acadêmico.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="portfolio-oficial-titulo" class="site-card p-4 mt-4 rounded-3 shadow-sm">
+      <h2 id="portfolio-oficial-titulo" class="h4 mb-3">Portfólio Oficial</h2>
+      <p class="mb-3">Essa versão é um protótipo de portfólio. Meu portfólio "oficial" feito em ReactJS é:</p>
+      <a class="official-button" href="https://gabrafo.dev" target="_blank" rel="noopener noreferrer" aria-label="Abrir portfólio oficial em gabrafo.dev">Acessar gabrafo.dev</a>
+    </section>
+
+    <section aria-labelledby="contato-titulo" class="site-card p-4 mt-4 rounded-3 shadow-sm">
+      <h2 id="contato-titulo" class="h4 mb-3">Contato</h2>
+      <ul class="list-unstyled mb-0">
+        <li><strong>Email:</strong> <a class="project-link" href="mailto:gafagundesmesquita@gmail.com">gafagundesmesquita@gmail.com</a></li>
+        <li><strong>LinkedIn:</strong> <a class="project-link" href="https://linkedin.com/in/gafagundes" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn">linkedin.com/in/gafagundes</a></li>
+        <li><strong>GitHub:</strong> <a class="project-link" href="https://github.com/gabrafo" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub">github.com/gabrafo</a></li>
+        <li><strong>Website:</strong> <a class="project-link" href="https://gabrafo.dev" target="_blank" rel="noopener noreferrer" aria-label="Abrir website">gabrafo.dev</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
